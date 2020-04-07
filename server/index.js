@@ -25,10 +25,9 @@ async function start() {
   // Give nuxt middleware to express
   app.use(nuxt.render)
   // Listen the server
-  const newport = 8080
-  app.listen(newport, host)
+  app.listen(port, host)
   consola.ready({
-    message: `Server listening on http://${host}:${newport}`,
+    message: `Server listening on http://${host}:${port}`,
     badge: true
   })
   var minutes = 5, the_interval = minutes * 60 * 1000;
